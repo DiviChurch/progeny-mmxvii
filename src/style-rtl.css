@@ -1,0 +1,243 @@
+/*!
+ * Theme Name: Progeny MMXVII
+ * Theme URI: https://audiotheme.com/view/progeny-mmxvii/
+ * Author: AudioTheme
+ * Author URI: https://audiotheme.com/
+ * Description: Twenty Seventeen child theme with a unique grid page template layout. With AudioTheme support included, you can nicely display your music, videos, and gigs.
+ * Version: 1.0.0
+ * License: GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Domain Path: /languages
+ * Template: twentyseventeen
+ * Text Domain: progeny-mmxvii
+ * Tags:
+ */
+/**
+ * Content
+ * -----------------------------------------------------------------------------
+ */
+/**
+ * Block Grids
+ * -----------------------------------------------------------------------------
+ */
+.block-grid {
+  clear: both;
+  padding-bottom: 1.9375em;
+}
+ul.block-grid {
+  list-style: none;
+  padding-right: 0;
+}
+.block-grid .grid-item {
+  width: 100%;
+}
+.block-grid .grid-item-media {
+  background-color: #686868;
+  display: block;
+  margin-bottom: 1.375em;
+  overflow: hidden;
+  padding-top: 100%;
+  position: relative;
+  width: 100%;
+}
+.block-grid .grid-item-media img {
+  height: 100%;
+  max-width: none;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+.block-grid .grid-item-media-link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.block-grid .grid-item-media-link:before {
+  background-color: rgba(0, 0, 0, 0);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  z-index: 10;
+}
+.block-grid .grid-item-media-link:hover:before,
+.block-grid .grid-item-media-link:focus:before {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.block-grid .grid-item-body {
+  margin-bottom: 0.75em;
+}
+.block-grid .grid-item-title {
+  color: #1a1a1a;
+  font-family: Montserrat, "Helvetica Neue", sans-serif;
+  font-size: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.875;
+  margin: 0;
+  word-wrap: break-word;
+}
+.block-grid .grid-item-title a {
+  display: inline-block;
+}
+.block-grid .grid-item-meta {
+  color: #1a1a1a;
+  display: block;
+  font-family: Montserrat, "Helvetica Neue", sans-serif;
+  font-size: 9px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 2;
+  margin-top: 0;
+  margin-bottom: 0.13333333em;
+  text-transform: uppercase;
+}
+.block-grid .grid-item-meta:last-child {
+  margin-bottom: 0;
+}
+.block-grid .grid-item-summary {
+  color: #686868;
+  margin-top: 0.25em;
+}
+.block-grid .grid-item-summary:first-child {
+  margin-top: 0;
+}
+.grid-item-media .spinner {
+  display: none;
+}
+.grid-landscape .grid-item-media {
+  padding-top: 56.25%;
+}
+.grid-portrait .grid-item-media {
+  padding-top: 140%;
+}
+/**
+ * CSS Grid Support
+ */
+@media (min-width: 480px) {
+  .block-grid {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 1.25em;
+    -ms-grid-columns: ([col] minmax(190px, 1fr))[2];
+    grid-template-columns: repeat(2, [col] minmax(190px, 1fr));
+  }
+  .grid-columns-2,
+  .grid-columns-3,
+  .grid-columns-4 {
+    -ms-grid-columns: ([col] minmax(190px, 1fr))[2];
+    grid-template-columns: repeat(2, [col] minmax(190px, 1fr));
+  }
+}
+@media (min-width: 44.375em) {
+  .grid-columns-3 {
+    -ms-grid-columns: ([col] minmax(190px, 1fr))[3];
+    grid-template-columns: repeat(3, [col] minmax(190px, 1fr));
+  }
+}
+@media (min-width: 56.875em) {
+  .block-grid {
+    grid-gap: 2.5em;
+    padding-bottom: 3.75em;
+  }
+  .grid-columns-4 {
+    -ms-grid-columns: ([col] minmax(190px, 1fr))[4];
+    grid-template-columns: repeat(4, [col] minmax(190px, 1fr));
+  }
+}
+/**
+ * No CSS Grid Support (Flexbox Grids)
+ */
+@supports not ((display: -ms-grid) or (display: grid)) {
+  @media (min-width: 480px) {
+    .site {
+      overflow: hidden;
+    }
+    .block-grid {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: row wrap;
+      -moz-box-orient: horizontal;
+      -moz-box-direction: normal;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+    .block-grid .grid-item {
+      -webkit-box-flex: 0;
+      -webkit-flex-grow: 0;
+      -moz-box-flex: 0;
+      -ms-flex-positive: 0;
+      flex-grow: 0;
+      -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+      margin-bottom: 2.5em;
+      min-width: 0;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  @media (min-width: 44.375em) {
+    .grid-columns-3 .grid-item {
+      -webkit-flex-basis: 33.3333%;
+      -ms-flex-preferred-size: 33.3333%;
+      flex-basis: 33.3333%;
+    }
+  }
+  @media (min-width: 56.875em) {
+    .grid-columns-4 .grid-item {
+      -webkit-flex-basis: 25%;
+      -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+    }
+  }
+}
+/* Buttons
+------------------------------------------------------------------------------*/
+/**
+ * Layout
+ * -----------------------------------------------------------------------------
+ */
+.full-width-column:not(.has-sidebar) #primary,
+.full-width-column.single-post:not(.has-sidebar) #primary,
+.full-width-column.page.page-one-column:not(.twentyseventeen-front-page) #primary,
+.full-width-column.archive.page-one-column:not(.has-sidebar) .page-header,
+.full-width-column.archive.page-one-column:not(.has-sidebar) #primary {
+  max-width: none;
+}
+

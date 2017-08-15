@@ -1,0 +1,10 @@
+.DS_Store
+.svn
+npm-debug.log
+phpcs.log
+build
+dist
+node_modules
+src/languages/*.pot
+wpcs
+shipitfile.js

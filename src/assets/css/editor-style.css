@@ -1,0 +1,16 @@
+/*!
+ * Theme Name: Progeny MMXVII
+ * Description: Used to style the TinyMCE editor.
+ */
+body {
+	background-color: #fff;
+	margin: 9px 10px;
+	max-width: 524px;
+	padding: 0;
+	word-wrap: break-word;
+}
+
+body.post-type-page,
+body.page-template-full-width-page {
+	max-width: 904px;
+}

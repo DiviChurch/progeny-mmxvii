@@ -1,0 +1,57 @@
+/**
+ * AudioTheme (plugin)
+ * @link https://audiotheme.com/
+ * -----------------------------------------------------------------------------
+ */
+
+
+/* Content
+------------------------------------------------------------------------------*/
+
+
+/* Gig
+------------------------------------------------------------------------------*/
+
+.single .audiotheme-gig-single dt,
+.single .audiotheme-gig-single dd {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.single .audiotheme-gig-single .entry-content {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.single .audiotheme-gig-single .audiotheme-meta-list .audiotheme-meta-item {
+	padding: 0.875em;
+}
+
+.single .audiotheme-gig-single .audiotheme-meta-list .audiotheme-meta-item:first-child {
+	padding-right: 0;
+}
+
+
+/* Gigs
+------------------------------------------------------------------------------*/
+
+
+/* Record
+------------------------------------------------------------------------------*/
+
+
+/* Records
+------------------------------------------------------------------------------*/
+
+.audiotheme-records .audiotheme-record-meta {
+	margin-top: 0.18181818em;
+}
+
+
+/* Video
+------------------------------------------------------------------------------*/
+
+
+/* Layout
+------------------------------------------------------------------------------*/
+
